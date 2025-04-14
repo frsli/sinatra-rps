@@ -2,10 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  "
-  <h1>Howdy!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  erb(:homepage)
 end
 
 get ("/rock") do
