@@ -9,10 +9,12 @@ They played <%= @comp_move %>!
 <% if @outcome == "won"%>
 <h2 style = "color: green">
 We <%= @outcome %>!
+ </h2>
 <% elsif @outcome == "lost"%>
 <h2 style = "color: red">
 We <%= @outcome %>!
-<% else >
+ </h2>
+<% else %>
 <h2 style = "color: black">
 We <%= @outcome %>!
 </h2>

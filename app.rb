@@ -5,7 +5,7 @@ get("/") do
   erb(:homepage)
 end
 
-get ("/rock") do
+get("/rock") do
   moves = ["rock", "paper", "scissors"]
 
   @comp_move = moves.sample

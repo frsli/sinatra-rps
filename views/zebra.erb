@@ -6,14 +6,16 @@ We played Rock!>
 They played <%= @comp_move %>!
 </h2>
 
-<% if @outcome == "won"%>
-<h2 style = "color: green">
-We <%= @outcome %>!
+<% if @outcome == "won" %>
+  <h2 style = "color: green">
+    We <%= @outcome %>!
+  </h2>
 <% elsif @outcome == "lost"%>
-<h2 style = "color: red">
-We <%= @outcome %>!
-<% else >
-<h2 style = "color: black">
-We <%= @outcome %>!
-</h2>
+  <h2 style = "color: red">
+  We <%= @outcome %>!
+  </h2>
+<% else %> 
+  <h2 style = "color: black">
+  We <%= @outcome %>!
+  </h2>
 <% end %>
